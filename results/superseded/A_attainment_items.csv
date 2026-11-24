@@ -1,0 +1,17 @@
+﻿item,name,sensor,axis,target,basis,median_rom,rasch,kin_attain,kin_pass90,rasch_rank,kin_rank
+002,sh abduction,S2,pitch,90,FMA def,25.1,-0.4,0.669,0.992,2,9
+003,sh ext rot,S1,yaw,90,AAOS ER,33.8,-0.03,0.598,0.842,7,7
+004,elbow flex,elbow,elbow,150,AAOS,31.8,-0.63,0.762,0.983,1,12
+005,supination,S1,roll,80,AAOS sup,19.8,-0.01,0.548,0.667,8,5
+006,sh add/IR,S1,yaw,70,AAOS IR,49.2,-0.35,0.439,0.592,3,3
+007,elbow ext,elbow,elbow,150,AAOS,23.5,-0.25,0.779,0.992,4,14
+008,pronation,S1,roll,80,AAOS pro,29.8,-0.22,0.534,0.675,5,4
+010,sh flex 90,S2,pitch,90,FMA def,35.0,-0.13,0.56,0.825,6,6
+011,pro/sup elbow90,S1,roll,160,AAOS arc,21.5,0.07,0.697,0.958,9,10
+012,pronation abd90,S1,yaw,80,AAOS pro,14.6,0.18,0.618,0.825,10,8
+013,pro/sup flex90-180,S1,roll,160,AAOS arc,15.3,0.32,0.766,0.95,14,13
+014,pro/sup flex30-90,S1,roll,160,AAOS arc,11.0,0.28,0.72,0.925,13,11
+015,wrist dorsi e90,glove,g1,15,FMA def,25.2,0.24,0.328,0.442,12,1
+016,wrist flex/ext e90,glove,g1,150,AAOS arc,15.7,0.23,0.792,1.0,11,15
+017,wrist dorsi e0,glove,g1,15,FMA def,12.3,0.47,0.35,0.513,16,2
+018,wrist flex/ext e0,glove,g1,150,AAOS arc,8.8,0.41,0.825,1.0,15,16

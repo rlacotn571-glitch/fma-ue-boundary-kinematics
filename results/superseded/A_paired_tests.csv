@@ -1,0 +1,9 @@
+﻿pair,label,n,med_rom_a,med_rom_b,frac_rom_drop,wilcoxon_p,rasch_a,rasch_b,frac_score_drop
+005->011,supination (syn) -> pro/sup sh0 e90,105,24.2,29.5,0.47,0.19,-0.01,0.07,0.1
+008->011,pronation (syn) -> pro/sup sh0 e90,106,36.9,29.2,0.43,0.23,-0.22,0.07,0.18
+011->014,pro/sup sh0 e90 -> pro/sup flex30-90 e0,107,51.5,16.5,0.49,0.48,0.07,0.28,0.13
+011->012,pro/sup sh0 e90 -> pronation abd90 e0,109,29.0,18.8,0.64,3.8e-05,0.07,0.18,0.13
+011->013,pro/sup sh0 e90 -> pro/sup flex90-180 e0,110,40.5,20.1,0.6,0.013,0.07,0.32,0.16
+014->013,pro/sup flex30-90 e0 -> pro/sup flex90-180 e0,106,22.4,22.0,0.53,0.38,0.28,0.32,0.08
+015->017,dorsi e90 -> dorsi e0,119,27.0,12.3,0.56,0.017,0.24,0.47,0.12
+016->018,flex/ext e90 -> flex/ext e0,119,16.4,8.8,0.66,0.00026,0.23,0.41,0.1

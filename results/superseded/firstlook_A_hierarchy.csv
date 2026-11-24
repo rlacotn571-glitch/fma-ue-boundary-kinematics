@@ -1,0 +1,28 @@
+﻿item,name,rasch,kin_deficit,rasch_rank,kin_rank
+000,sh elevation,-1.47,0.822,1,27
+001,sh retraction,-1.0,0.631,2,9
+002,sh abduction,-0.4,0.586,4,3
+003,sh ext rot,-0.03,0.585,11,2
+004,elbow flex,-0.63,0.594,3,5
+005,supination,-0.01,0.631,12,9
+006,sh add/IR,-0.35,0.594,5,5
+007,elbow ext,-0.25,0.647,6,12
+008,pronation,-0.22,0.631,7,9
+009,hand to lumbar,-0.13,0.644,9,11
+010,sh flex 90,-0.13,0.558,9,1
+011,pro/sup elbow90,0.07,0.63,13,7
+012,pronation abd90,0.18,0.693,16,18
+013,pro/sup flex90-180,0.32,0.685,25,16
+014,pro/sup flex30-90,0.28,0.689,23,17
+015,wrist dorsi e90,0.24,0.667,22,13
+016,wrist flex/ext e90,0.23,0.68,20,14
+017,wrist dorsi e0,0.47,0.727,27,23
+018,wrist flex/ext e0,0.41,0.693,26,18
+019,wrist circum,-0.19,0.682,8,15
+020,mass flexion,0.11,0.697,14,20
+021,mass extension,0.19,0.699,18,21
+022,thumb add,0.23,0.771,20,25
+023,pinch,0.31,0.774,24,26
+024,cylinder,0.19,0.707,18,22
+025,sphere,0.18,0.77,16,24
+026,finger-nose,0.14,0.589,15,4
