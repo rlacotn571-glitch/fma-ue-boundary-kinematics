@@ -1,0 +1,38 @@
+=== A (v2): all 222 assessments, M1 full range ===
+  011->012  n=208  r=-0.39 [-0.56,-0.19]  drop=62%  Holm p=7.1e-06  worst-case Holm p=0.0024
+  016->018  n=219  r=-0.26 [-0.46,-0.07]  drop=62%  Holm p=0.0051  worst-case Holm p=0.091
+  011->013  n=209  r=-0.24 [-0.44,-0.02]  drop=58%  Holm p=0.016  worst-case Holm p=0.15
+  015->017  n=218  r=-0.26 [-0.44,-0.05]  drop=58%  Holm p=0.0053  worst-case Holm p=0.091
+  014->013  n=199  r=-0.01 [-0.23,+0.20]  drop=47%  Holm p=0.87  worst-case Holm p=0.91
+  011->014  n=201  r=-0.10 [-0.32,+0.11]  drop=51%  Holm p=0.43  worst-case Holm p=0.73
+  008->011  n=202  r=+0.20 [-0.00,+0.42]  drop=41%  Holm p=0.055  worst-case Holm p=0.28
+  005->011  n=204  r=+0.15 [-0.08,+0.36]  drop=46%  Holm p=0.2  worst-case Holm p=0.54
+  robustness: count of 12 analyses (4 metrics x 3 samples) with Holm p<0.05 | same sign as main
+    011->012: 11/12 significant, 12/12 same sign
+    016->018: 7/12 significant, 12/12 same sign
+    011->013: 9/12 significant, 12/12 same sign
+    015->017: 6/12 significant, 12/12 same sign
+    014->013: 2/12 significant, 9/12 same sign
+    011->014: 0/12 significant, 9/12 same sign
+    008->011: 0/12 significant, 10/12 same sign
+    005->011: 0/12 significant, 9/12 same sign
+  Rasch (222) difficulty for pair items: 005:-0.05, 008:-0.16, 011:+0.08, 012:+0.23, 013:+0.39, 014:+0.34, 015:+0.25, 016:+0.29, 017:+0.48, 018:+0.42
+
+=== B (v2): all 222, analysis rows 5852 of 5994 (flat 122, short 20) ===
+  leakage-free univariate (primary feature): median 0v12 0.977, 1v2 0.777; 1v2 lower in 26/27; Wilcoxon over items p=3e-08
+  CV model: median 0v12 0.992, 1v2 0.845; 1v2 lower in 27/27; Wilcoxon over items p=1.5e-08
+  split 001-111 univariate: median 0v12 0.970, 1v2 0.770, 1v2 lower in 26/27
+  split 112-222 univariate: median 0v12 0.979, 1v2 0.784, 1v2 lower in 26/27
+  items where the pre-specified primary feature fails (univariate AUC 0v12 < 0.7): 000 (S2_rom_max, 0.58), 026 (S1_sparc, 0.48)
+  entropy by score: 0:0.16, 1:0.59, 2:0.52
+  D1: rate by score 0:0.4%, 1:2.8%, 2:0.9%; chi2 p=6e-12 (worst-case 4.5e-07); above/below kinematic guess 39/32, binomial p=0.48 (worst-case 0.63)
+  D2: rate by score 0:0.8%, 1:11.9%, 2:4.4%; chi2 p=1.4e-58 (worst-case 7.5e-32); above/below kinematic guess 124/162, binomial p=0.029 (worst-case 0.11)
+  D1 score-1 excess +0.023; permutation null mean -0.070; p=0.000
+
+=== H3 (v2, exploratory): all 222, score 2 vs 1 ===
+  pooled, coupling-defined items (n=2696; worst-case SE): magnitude OR 2.29 [1.88,2.80] p=2.3e-16 | coupling OR 0.72 [0.62,0.84] p=2.6e-05 | sparc OR 0.87 [0.76,1.01] p=0.059 | peaks_ps OR 0.83 [0.72,0.97] p=0.019 | logdur OR 0.88 [0.74,1.05] p=0.17
+  wrist (n=498; worst-case SE): magnitude OR 3.02 [1.81,5.04] p=2.5e-05 | coupling OR 0.45 [0.26,0.77] p=0.0036 | peaks_ps OR 0.74 [0.55,0.99] p=0.04
+  forearm (n=685; worst-case SE): magnitude OR 2.33 [1.67,3.24] p=6.5e-07 | coupling OR 0.69 [0.50,0.94] p=0.02 | peaks_ps OR 1.11 [0.87,1.43] p=0.41
+  elbow (n=308; worst-case SE): magnitude OR 5.28 [2.68,10.42] p=1.6e-06 | coupling OR 1.19 [0.64,2.22] p=0.59 | peaks_ps OR 0.47 [0.29,0.77] p=0.0029
+  009/026 (n=236; worst-case SE): magnitude OR 3.53 [1.95,6.39] p=3e-05 | coupling OR 0.70 [0.45,1.10] p=0.12 | peaks_ps OR 0.57 [0.35,0.91] p=0.02
+  shoulder (n=969; worst-case SE): magnitude OR 1.95 [1.55,2.44] p=8.6e-09 | coupling OR 0.81 [0.65,1.02] p=0.077 | peaks_ps OR 0.96 [0.77,1.21] p=0.74
