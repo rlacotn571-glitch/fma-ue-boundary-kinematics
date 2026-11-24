@@ -1,0 +1,28 @@
+cff-version: 1.2.0
+message: "If you use this code or these results, please cite the article and the REHAB data descriptor."
+title: "Partial versus full performance in sensor-based Fugl-Meyer scoring: analysis code"
+version: 1.0.0
+date-released: 2026-11-24
+license: MIT
+type: software
+authors:
+  - family-names: "[FAMILY NAME]"
+    given-names: "[GIVEN NAME]"
+    affiliation: "[AFFILIATION]"
+    orcid: "https://orcid.org/0000-0000-0000-0000"
+keywords:
+  - stroke
+  - Fugl-Meyer Assessment
+  - wearable sensors
+  - inertial measurement unit
+  - ordinal models
+references:
+  - type: article
+    title: "A wearable sensor-based kinematic dataset collected under standardized rehabilitation tasks from 120 post-stroke patients"
+    authors:
+      - family-names: Lv
+        given-names: Ming
+    journal: "Scientific Data"
+    year: 2026
+    volume: 13
+    doi: 10.1038/s41597-026-07802-2

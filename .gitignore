@@ -1,0 +1,24 @@
+# original dataset and extracted files (download separately)
+REHAB/
+extracted/
+*.zip
+*.rar
+*.npy
+
+# regenerated assessment-level files (not redistributed)
+results/features_v1.csv
+results/*_oof*.csv
+results/*_metrics*.csv
+results/*_H3.csv
+results/v2_H3_features.csv
+results/A_paired_rom.csv
+results/A_rom_by_assessment.csv
+results/B_quality_features.csv
+
+# environment and system files
+.venv/
+__pycache__/
+*.pyc
+.DS_Store
+Thumbs.db
+~$*
