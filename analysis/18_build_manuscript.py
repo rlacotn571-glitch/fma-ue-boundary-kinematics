@@ -89,11 +89,13 @@ def add_runs(p, s):
 title = re.search(r"^% TITLE: (.+)$", text, re.M).group(1)
 running = re.search(r"^% RUNNING: (.+)$", text, re.M).group(1)
 p = doc.add_paragraph(); p.add_run(title).bold = True
-doc.add_paragraph("[AUTHOR NAMES]^1,*")
-doc.add_paragraph("^1 [Affiliation, full institutional address]")
-doc.add_paragraph("* Corresponding author: [name, email]")
+# title-page details (names, affiliation, emails) are kept in a local, unshared file
+_tp = sub / "title_page.txt"
+_lines = (_tp.read_text(encoding="utf-8-sig").strip().splitlines() if _tp.exists()
+          else ["[AUTHOR NAMES]", "[Affiliation]", "Corresponding author: [name, email]"])
+for _ln in _lines:
+    doc.add_paragraph(_ln)
 doc.add_paragraph(f"Running title: {running}")
-doc.add_paragraph("Email addresses of all authors: [AUTHOR]")
 
 lines = [l for l in text.splitlines() if not l.startswith("% ")]
 i = 0
