@@ -1,0 +1,41 @@
+worst-case n_eff = 112.0
+=== A v3 (3 like-for-like pairs, Holm over 3) ===
+  M1 011->014 n=201 r=-0.10 [-0.32,+0.12] drop=51% Holm p=0.22 worst Holm p=0.38
+  M1 015->017 n=218 r=-0.26 [-0.47,-0.06] drop=58% Holm p=0.0022 worst Holm p=0.049
+  M1 016->018 n=219 r=-0.26 [-0.46,-0.05] drop=62% Holm p=0.0022 worst Holm p=0.049
+  M2 011->014 n=201 r=-0.12 [-0.34,+0.10] drop=54% Holm p=0.15 worst Holm p=0.31
+  M2 015->017 n=218 r=-0.24 [-0.44,-0.02] drop=57% Holm p=0.0046 worst Holm p=0.061
+  M2 016->018 n=219 r=-0.27 [-0.48,-0.06] drop=64% Holm p=0.0015 worst Holm p=0.04
+  M3 011->014 n=200 r=+0.10 [-0.12,+0.31] drop=45% Holm p=0.23 worst Holm p=0.39
+  M3 015->017 n=218 r=-0.33 [-0.53,-0.12] drop=62% Holm p=9.2e-05 worst Holm p=0.0092
+  M3 016->018 n=219 r=-0.20 [-0.41,+0.02] drop=58% Holm p=0.018 worst Holm p=0.13
+  M5 011->014 n=201 r=-0.04 [-0.26,+0.19] drop=55% Holm p=0.62 worst Holm p=0.72
+  M5 015->017 n=218 r=-0.25 [-0.46,-0.04] drop=59% Holm p=0.0034 worst Holm p=0.062
+  M5 016->018 n=219 r=-0.18 [-0.39,+0.03] drop=58% Holm p=0.048 worst Holm p=0.22
+  011->014: Holm p<0.05 in 0/12; same sign in 9/12
+  015->017: Holm p<0.05 in 7/12; same sign in 12/12
+  016->018: Holm p<0.05 in 7/12; same sign in 12/12
+
+=== B v3 ===
+  cv: median AUC 0v1 0.987, 1v2 0.854, 0v12 0.993; 1v2 < 0v1 in 27/27
+  uni: median AUC 0v1 0.962, 1v2 0.777, 0v12 0.977; 1v2 < 0v1 in 26/27
+  CV ordinal: median(AUC0v1 - AUC1v2) = +0.127, cluster bootstrap m=n 95% CI [+0.104, +0.159]
+  CV ordinal: median(AUC0v1 - AUC1v2) = +0.127, cluster bootstrap m=112 95% CI [+0.092, +0.161]
+  single feature: median(AUC0v1 - AUC1v2) = +0.150, cluster bootstrap m=n 95% CI [+0.120, +0.189]
+  single feature: median(AUC0v1 - AUC1v2) = +0.150, cluster bootstrap m=112 95% CI [+0.111, +0.197]
+  calibration class 0: mean predicted 0.437 vs observed 0.438; ECE 0.024
+  calibration class 1: mean predicted 0.279 vs observed 0.277; ECE 0.021
+  calibration class 2: mean predicted 0.284 vs observed 0.285; ECE 0.021
+  D1 rates by score: 0:0.4%, 1:2.9%, 2:0.8%
+  D1 excess at score 1 = +0.023; worst-case cluster bootstrap 95% CI [+0.012, +0.036]
+  calibration null (labels drawn from the model's own probabilities): mean excess +0.006, 95% range [-0.002, +0.015]; P(null >= observed) = 0.000
+  entropy by score: 0:0.17, 1:0.61, 2:0.53
+
+=== H3 v3 (exploratory): score 2 vs 1, item FE, cluster SE x sqrt(222/115.7) ===
+  VIF: tgt_z:1.10, non_z:1.10, peaks_z:1.09, logdur_z:1.09
+  pooled (n=2696): tgt OR 2.21 [1.78,2.74] p=7.2e-13 | non OR 1.35 [1.16,1.56] p=8.6e-05 | peaks OR 0.87 [0.74,1.02] p=0.085 | logdur OR 0.93 [0.79,1.09] p=0.36
+  wrist (n=498): tgt OR 3.57 [2.33,5.46] p=4.6e-09 | non OR 1.55 [1.09,2.20] p=0.015 | peaks OR 1.03 [0.75,1.40] p=0.87 | logdur OR 1.30 [0.94,1.79] p=0.11
+  forearm (n=685): tgt OR 2.49 [1.61,3.85] p=4.4e-05 | non OR 1.91 [1.40,2.59] p=4.2e-05 | peaks OR 1.05 [0.80,1.37] p=0.74 | logdur OR 0.86 [0.64,1.14] p=0.28
+  elbow (n=308): tgt OR 2.13 [0.81,5.63] p=0.13 | non OR 1.52 [0.94,2.44] p=0.085 | peaks OR 0.44 [0.27,0.72] p=0.00099 | logdur OR 0.64 [0.42,0.99] p=0.046
+  009/026 (n=236): tgt OR 2.96 [1.80,4.86] p=1.8e-05 | non OR 1.33 [0.82,2.16] p=0.25 | peaks OR 0.64 [0.39,1.04] p=0.073 | logdur OR 1.07 [0.70,1.64] p=0.74
+  shoulder (n=969): tgt OR 1.75 [1.33,2.31] p=7.2e-05 | non OR 1.09 [0.85,1.40] p=0.5 | peaks OR 0.93 [0.73,1.19] p=0.58 | logdur OR 0.94 [0.75,1.18] p=0.59

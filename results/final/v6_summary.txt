@@ -1,0 +1,15 @@
+[1] separate binary models: median AUC 0v1 0.989, 1v2 0.853; gap median 0.132; gap>0 in 25/27, >0.05 in 22/27
+    fixed-OOF assessment bootstrap m=222: gap 95% CI [0.098, 0.152]
+    fixed-OOF assessment bootstrap m=112: gap 95% CI [0.089, 0.160]
+[2] refit-in-bootstrap (100 resamples, m=112, duplicates kept in one fold): gap median 0.128, 95% CI [0.091, 0.167]
+[3] score distribution 0.438/0.277/0.285. Item-level accuracy: PO model 0.826 (recall 0/1/2 = 0.95/0.68/0.78); movement-only rule (0 vs 2) 0.723; movement + random 1/2 0.719
+[4] heterogeneity of 1v2 AUC across 27 items (worst-case SEs): Q = 73.7, df = 26, p = 1.9e-06, I2 = 65%
+[5] 015->017: median easier 23.6 deg, harder 10.8 deg; median paired change -2.0 deg; Hodges-Lehmann -4.7 deg
+[5] 016->018: median easier 14.8 deg, harder 11.1 deg; median paired change -2.3 deg; Hodges-Lehmann -3.4 deg
+[5] 011->014: median easier 51.5 deg, harder 16.5 deg; median paired change -0.0 deg; Hodges-Lehmann -1.7 deg
+[6] pooled (n=2696): tgt 2.55 [2.01,3.24] p=1.2e-14 | non 1.18 [1.02,1.36] p=0.024 | peaks 0.89 [0.76,1.04] p=0.13 | logdur 0.96 [0.82,1.13] p=0.63
+[6] wrist (n=498): tgt 3.57 [2.33,5.46] p=4.6e-09 | non 1.55 [1.09,2.20] p=0.015 | peaks 1.03 [0.75,1.40] p=0.87 | logdur 1.30 [0.94,1.79] p=0.11
+[6] forearm (n=482): tgt 3.99 [1.81,8.78] p=0.00059 | non 1.36 [0.98,1.90] p=0.07 | peaks 1.13 [0.83,1.54] p=0.45 | logdur 0.86 [0.64,1.15] p=0.31
+[6] elbow (n=308): tgt 2.13 [0.81,5.63] p=0.13 | non 1.52 [0.94,2.44] p=0.085 | peaks 0.44 [0.27,0.72] p=0.00099 | logdur 0.64 [0.42,0.99] p=0.046
+[6] 009/026 (n=236): tgt 2.96 [1.80,4.86] p=1.8e-05 | non 1.33 [0.82,2.16] p=0.25 | peaks 0.64 [0.39,1.04] p=0.073 | logdur 1.07 [0.70,1.64] p=0.74
+[6] shoulder (n=1172): tgt 2.21 [1.67,2.92] p=2.3e-08 | non 0.97 [0.77,1.22] p=0.8 | peaks 0.96 [0.77,1.19] p=0.71 | logdur 1.02 [0.82,1.27] p=0.86

@@ -1,0 +1,27 @@
+=== B v4 (penalised proportional-odds) ===
+  cv: median 0v1 0.983, 1v2 0.857; gap>0 in 27/27, gap>0.05 in 25/27
+  uni: median 0v1 0.966, 1v2 0.785; gap>0 in 26/27, gap>0.05 in 24/27
+  items 012/013 now: 012 cv1v2 0.863 uni0v1 0.930 uni1v2 0.830; 013 cv1v2 0.898 uni0v1 0.980 uni1v2 0.841
+  lowest cv 1v2: 023 0.55, 014 0.64, 000 0.69, 022 0.75, 011 0.75
+  highest cv 1v2: 004 0.95, 005 0.93, 016 0.93
+  CV ordinal: median gap +0.130, cluster bootstrap m=222 95% CI [+0.106, +0.164]
+  CV ordinal: median gap +0.130, cluster bootstrap m=112 95% CI [+0.098, +0.170]
+  single feature: median gap +0.140, cluster bootstrap m=222 95% CI [+0.112, +0.174]
+  single feature: median gap +0.140, cluster bootstrap m=112 95% CI [+0.105, +0.184]
+  class 0: mean pred 0.437 obs 0.438 ECE 0.020; tail p<0.10: n=2737, mean pred 0.018, observed 0.004 (12 cases)
+  class 1: mean pred 0.281 obs 0.277 ECE 0.022; tail p<0.10: n=2370, mean pred 0.021, observed 0.022 (52 cases)
+  class 2: mean pred 0.281 obs 0.285 ECE 0.013; tail p<0.10: n=2965, mean pred 0.009, observed 0.009 (28 cases)
+  D1 counts: score 0: 12/2566 (0.5%), score 1: 52/1619 (3.2%), score 2: 28/1667 (1.7%)
+  min p1 among score-1 discordant: 0.0001
+  excess at score 1 +0.023, worst-case cluster bootstrap CI [+0.010, +0.036]; calibration null mean +0.012 [+0.003, +0.022], P(null>=obs)=0.011
+  score-1 discordant by item: 022:7, 019:5, 024:5, 006:4, 020:4, 008:4, 002:4, 001:3, 000:3, 025:3, 010:1, 009:1, 015:1, 014:1, 013:1, 012:1, 011:1, 017:1, 016:1, 026:1
+  entropy by score: 0:0.17, 1:0.61, 2:0.52
+
+=== H3 v4 === within-item max VIF: median 1.30, max 2.11
+  pooled (n=2696): tgt 2.52 [1.98,3.20] p=4.1e-14 | non 1.19 [1.03,1.37] p=0.021 | peaks 0.88 [0.75,1.04] p=0.13 | logdur 0.94 [0.80,1.10] p=0.43
+  wrist (n=498): tgt 3.57 [2.33,5.46] p=4.6e-09 | non 1.55 [1.09,2.20] p=0.015 | peaks 1.03 [0.75,1.40] p=0.87 | logdur 1.30 [0.94,1.79] p=0.11
+  forearm (n=482): tgt 3.99 [1.81,8.78] p=0.00059 | non 1.36 [0.98,1.90] p=0.07 | peaks 1.13 [0.83,1.54] p=0.45 | logdur 0.86 [0.64,1.15] p=0.31
+  elbow (n=308): tgt 2.13 [0.81,5.63] p=0.13 | non 1.52 [0.94,2.44] p=0.085 | peaks 0.44 [0.27,0.72] p=0.00099 | logdur 0.64 [0.42,0.99] p=0.046
+  009/026 (n=236): tgt 2.96 [1.80,4.86] p=1.8e-05 | non 1.33 [0.82,2.16] p=0.25 | peaks 0.64 [0.39,1.04] p=0.073 | logdur 1.07 [0.70,1.64] p=0.74
+  shoulder (n=1172): tgt 2.15 [1.63,2.84] p=7.9e-08 | non 0.98 [0.77,1.25] p=0.88 | peaks 0.95 [0.76,1.19] p=0.68 | logdur 0.97 [0.78,1.20] p=0.76
+fit_po convergence: 1350/1350 fits converged
