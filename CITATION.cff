@@ -6,10 +6,10 @@ date-released: 2026-11-24
 license: MIT
 type: software
 authors:
-  - family-names: "[FAMILY NAME]"
-    given-names: "[GIVEN NAME]"
-    affiliation: "[AFFILIATION]"
-    orcid: "https://orcid.org/0000-0000-0000-0000"
+  - family-names: "Kim"
+    given-names: "Cheasu"
+    affiliation: "Department of Physical Therapy, Yonsei University, Wonju, Republic of Korea"
+    orcid: "https://orcid.org/0009-0001-6447-4630"
 keywords:
   - stroke
   - Fugl-Meyer Assessment
