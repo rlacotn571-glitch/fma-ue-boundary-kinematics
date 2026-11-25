@@ -114,7 +114,7 @@ table(["Script", "Purpose"], [
     ("20_tripod_support.py", "Missing feature values; per-item AUC CIs"),
     ("21_tripod_checklist.py", "TRIPOD+AI checklist (Additional file 2)"),
     ("22_v6.py", "Separate binary models, refit-in-bootstrap, pooled accuracy, heterogeneity, wrist change in degrees, determinants (supporting analysis 2)"),
-    ("17_figures_v4.py", "Figures 1-4"),
+    ("17_figures_v4.py", "Figures 1-4 (v4 layout, superseded)"), ("23_figures_v5.py", "Figures 1-4 (final)"),
     ("18_build_manuscript.py", "Manuscript assembly with numbered references"),
     ("01, 03-13, 15", "Superseded exploratory versions (see S2)")], 8)
 out = sub / "Additional_file_1.docx"
