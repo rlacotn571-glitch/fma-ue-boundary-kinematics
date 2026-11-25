@@ -4,7 +4,7 @@ Analysis code and aggregate results for the manuscript:
 
 > Kim C. Wearable kinematics detect whether, more than how fully, Fugl-Meyer upper-extremity movements are performed: an item-level analysis of 222 assessments in subacute stroke. *Submitted to Journal of NeuroEngineering and Rehabilitation.* [Update with the published citation.]
 
-Archived code: [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24488630.svg)](https://doi.org/10.5281/zenodo.24488630) (version 1.0.0; all versions: https://doi.org/10.5281/zenodo.24488629)
+Archived code: [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24529511.svg)](https://doi.org/10.5281/zenodo.24529511) (version 1.0.1; all versions: https://doi.org/10.5281/zenodo.24488629)
 
 The study is a secondary analysis of the public REHAB dataset (Lv et al., Sci Data 2026;13:1136, https://doi.org/10.1038/s41597-026-07802-2). For each of 27 FMA-UE items it measures how well wearable kinematics separate the two score boundaries, 0 versus 1 (whether a movement occurs) and 1 versus 2 (whether it is complete).
 
