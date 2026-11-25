@@ -47,7 +47,7 @@ Replace `<REHAB>` with the extracted `REHAB` folder and run from the repository 
 | 3. Primary analysis (ordinal model, calibration, discordance) | `python -I analysis/16_v4.py results` | `v5_summary.txt`, `v5_B_*`, `v5_H3*` |
 | 4. Missing data and per-item AUC CIs | `python -I analysis/20_tripod_support.py results` | `v5_B_item_auc_ci.csv` |
 | 5. Binary models, refit bootstrap, pooled accuracy, heterogeneity, determinants | `python -I analysis/22_v6.py results` | `v6_*` files |
-| 6. Figures | `python -I analysis/17_figures_v4.py results figures` | Figures 1-4 |
+| 6. Figures | `python -I analysis/23_figures_v5.py results figures` | Figures 1-4 |
 
 Steps 2-5 take a few minutes each on a laptop. Scripts 19, 21 and 18 build the manuscript's additional files and manuscript document; script 18 needs the manuscript source, which is not part of this repository.
 
@@ -55,7 +55,7 @@ Scripts 00-13 and 15 are superseded exploratory versions kept for transparency. 
 
 ## Use of generative AI
 
-A large language model assistant (Claude, Anthropic) was used to write and run the analysis code and to review it. The authors checked all code and outputs.
+A large language model assistant (Claude, Anthropic) was used to write and run the analysis code and to review it. The author checked all code and outputs.
 
 ## Licence
 

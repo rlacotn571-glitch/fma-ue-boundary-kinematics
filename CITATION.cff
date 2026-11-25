@@ -1,8 +1,8 @@
 cff-version: 1.2.0
 message: "If you use this code or these results, please cite the article and the REHAB data descriptor."
 title: "Partial versus full performance in sensor-based Fugl-Meyer scoring: analysis code"
-version: 1.0.0
-date-released: 2026-11-24
+version: 1.0.1
+date-released: 2026-11-25
 license: MIT
 type: software
 authors:
